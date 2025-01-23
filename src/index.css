@@ -1,0 +1,77 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.fon{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.blob{
+  width: 2500px;
+  /* height: 1000px; */
+}
+
+
+section {
+  display: grid;
+  place-items: center;
+}
+
+h1 {
+  font-size: 2rem;
+  /* padding: 20px; */
+  
+}
+
+.slider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50%;
+  width: 100%;
+  overflow: hidden;
+
+  border-radius: 16px;
+
+  backdrop-filter: blur(7.4px);
+  -webkit-backdrop-filter: blur(7.4px);
+
+}
+
+.slider-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  
+  animation: scrolling 20s linear infinite;
+
+}
+
+@keyframes scrolling {
+
+  0% {
+      transform: translateX(80%);
+  }
+
+  100% {
+      transform: translateX(-20%);
+  }
+}
+
+.slider-items img {
+  width: 5%;
+  margin: 20px;
+
+}
+
+.nop{
+  background: linear-gradient(90deg, #44ff9a -0.55%, #44b0ff 22.86%, #8b44ff 48.36%, #ff6644 73.33%, #ebff70 99.34%)
+}
+
+.dop{
+  stop-color: var(--color-cyan-500);
+  stop-color: var(--color-purple-500)
+}
+.blo{
+  filter: blur(64px)
+}
